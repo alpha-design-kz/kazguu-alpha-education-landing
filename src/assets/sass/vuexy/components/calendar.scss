@@ -1,0 +1,187 @@
+@import '../_variables.scss';
+@-moz-document url-prefix() {
+
+    #simple-calendar-app {
+        .theme-default {
+            border: none!important;
+            .cv-header-days {
+                font-weight: lighter;
+                font-family: Roboto;
+                border-style:none;
+                margin-bottom: 14px;
+                margin-left: 28px;
+                margin-right: 28px;
+            }
+            .cv-header,
+            .cv-header-day {
+                border-style:none;
+                background-color: transparent;
+                font-weight: 400;
+                font-size: 14px;
+                padding: 0!important;
+            }
+            .cv-day {
+                font-size: 13px;
+                font-weight: 600;
+                border: none;
+                padding: 0!important;
+                &:not(.outsideOfMonth) {
+                    &.quiz-day{
+                        .cv-day-number {
+
+                            background-color: $secondary;
+                            border-radius: 100%;
+                            color: #fff;
+                            text-align: center;
+                            font-weight: 600;
+                            height: 37px!important;
+                            width: 37px!important;
+                        }
+                    }
+                    &.quiz-day:hover{
+                        .quiz-tooltip{
+                            display: block;
+                        }
+                    }
+                    background-color: transparent !important;
+                }
+
+                &.outsideOfMonth {
+                    background-color: transparent!important;
+                    color:transparent!important;
+                }
+                .cv-day-number {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 37px!important;
+                    width: 37px!important;
+                }
+                &.today {
+                    .cv-day-number {
+                        background-color: rgba(var(--vs-primary),1);
+                        border-radius: 100%;
+                        color: #fff;
+                        text-align: center;
+                        font-weight: 600;
+
+                        height: 37px!important;
+                        width: 37px!important;
+                    }
+                }
+
+            }
+            .cv-weeks {
+                height: 270px!important;
+                overflow: unset;
+                padding: 0 28px;
+                flex-grow: unset!important;
+                border-style: none;
+                .cv-week {
+                    margin-bottom: 6px;
+                    .cv-event {
+                        display: none!important;
+                    }
+                    &:first-of-type {
+                        .cv-day {
+                            border-top: none;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+#simple-calendar-app {
+    .theme-default {
+        border: none!important;
+        .cv-header-days {
+            font-weight: lighter;
+            font-family: Roboto;
+            border-style:none;
+            margin-bottom: 14px;
+            margin-left: 28px;
+            margin-right: 28px;
+        }
+        .cv-header,
+        .cv-header-day {
+            border-style:none;
+            background-color: transparent;
+            font-weight: 400;
+            font-size: 14px;
+            padding: 0!important;
+        }
+        .cv-day {
+            font-size: 13px;
+            font-weight: 600;
+            border: none;
+            padding: 0!important;
+            &:not(.outsideOfMonth) {
+                &.quiz-day{
+                    .cv-day-number {
+                        background-color: $secondary;
+                        border-radius: 100%;
+                        color: #fff;
+                        text-align: center;
+                        font-weight: 600;
+                        height: 37px;
+                        width: 37px;
+                    }
+                }
+                &.quiz-day:hover{
+                    .quiz-tooltip{
+                        display: block;
+                    }
+                }
+                background-color: transparent !important;
+            }
+
+            &.outsideOfMonth {
+                background-color: transparent!important;
+                color:transparent!important;
+            }
+            .cv-day-number {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 37px;
+                width: 37px;
+            }
+            &.today {
+                .cv-day-number {
+                    background-color: rgba(var(--vs-primary),1);
+                    border-radius: 100%;
+                    color: #fff;
+                    text-align: center;
+                    font-weight: 600;
+                    height: 37px;
+                    width: 37px;
+                }
+            }
+
+        }
+        .cv-weeks {
+            height: 270px!important;
+            overflow: unset;
+            padding: 0 28px;
+            flex-grow: unset!important;
+            border-style: none;
+            .cv-week {
+                margin-bottom: 6px;
+                .cv-event {
+                   display: none!important;
+                }
+                &:first-of-type {
+                    .cv-day {
+                        border-top: none;
+
+                    }
+                }
+            }
+        }
+    }
+}

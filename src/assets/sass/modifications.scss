@@ -1,0 +1,359 @@
+.no-shadow{
+    box-shadow: none!important;
+}
+.kill-shadow{
+    box-shadow: none!important;
+}
+.con-vs-card{
+    border-radius: 25px;
+    .vs-card--content{
+        padding: 0!important;
+    }
+}
+.vs-con-textarea{
+    padding-bottom: 15px!important;
+}
+.vs-sidebar-position-right{
+    max-width: 440px!important;
+    padding: 35px 47px 40px 50px;
+}
+.dash-middle-block{
+    height: 498px!important;
+}
+.v-picker{
+    font-family: Roboto!important;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.1);
+}
+.dashboard-picture{
+    bottom: 20px!important;
+    right:40px!important;
+}
+.input-group-addon{
+    display: flex;
+    align-items:center;
+    margin-left: 1rem;
+    border: 1px solid #DFE3E9;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.1);
+    background: white;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 8px;
+    height: 50px;
+    width: 120px;
+    span{
+        height: 18px!important;
+        width: 18px;
+    }
+}
+.vs-breadcrumb--link{
+    color: #ADADAD!important;
+}
+.vs-breadcrumb--ol {
+    .vs-breadcrum--separator {
+        display: inline;
+        content:url('../images/icons/arrow_right.svg');
+        background-size: 6px 29px;
+        height: 6px;
+        vertical-align: middle;
+        width: 29px;
+    }
+}
+.v-card:not(.v-sheet--tile):not(.v-card--shaped){
+    border-radius: 15px!important;
+}
+.v-picker--time, .v-picker--date{
+    max-width: 40vw!important;
+    .v-picker__body{
+        padding-bottom: 40px!important;
+    }
+}
+.vx-input-group-default{
+    width: 100%;
+}
+.input-select-con, .input-time, .input-custom{
+    background: white;
+    border: 1px solid #DFE3E9;
+    box-sizing: border-box;
+    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    height: fit-content;
+    .vs-input--input{
+        border: none!important;
+    }
+    .vs-input-primary, .vs-input--input:focus{
+        border: none;
+        box-shadow: none;
+    }
+    &-50{
+        height: 50px;
+    }
+    .vs-con-input{
+        align-items:center;
+        height: 100% !important;
+        input{
+            height: 100% !important;
+        }
+    }
+    .vs-input--placeholder{
+        height: 100%;
+        font-family: "Futura";
+        color: #CFCFCF!important;
+    }
+    .vs-input--placeholder.normal{
+        padding: 14px 1rem!important;
+    }
+}
+.vs-con-input{
+    overflow: hidden;
+}
+.con-vs-alert{
+    height: unset!important;
+    max-height: fit-content;
+}
+.vs-sidebar{
+    box-shadow: none!important;
+    max-width: 300px;
+    .vs-sidebar--item{
+        width: 70%!important;
+        margin: 8px 0!important;
+        font-weight: bold;
+        font-family: "Khula"!important;
+        padding: 0 0 !important;
+        color: #959595!important;
+
+        .truncate{
+            //margin-left: 10px!important;
+        }
+    }
+    &--icon{
+
+        ::before{
+            display: inline-block;
+            background-size: 28px 28px;
+            height: 28px;
+            vertical-align: middle;
+            width: 28px;
+            content: '';
+            -webkit-mask-size: cover;
+            mask-size: cover;
+            margin-right: 15px;
+            background-color: #959595;
+        }
+        &-dashboard{
+            ::before{
+                -webkit-mask:url('../images/icons/dashboard.svg') no-repeat 50% 50%;
+                mask: url('../images/icons/dashboard.svg')no-repeat 50% 50%;
+            }
+        }
+        &-courses{
+            ::before{
+                -webkit-mask:url('../images/icons/courses.svg') no-repeat 50% 50%;
+                mask: url('../images/icons/courses.svg')no-repeat 50% 50%;
+            }
+        }
+        &-quizzes{
+            ::before{
+                -webkit-mask:url('../images/icons/quizzes.svg') no-repeat 50% 50%;
+                mask: url('../images/icons/quizzes.svg')no-repeat 50% 50%;
+            }
+        }
+        &-resources{
+            ::before{
+                -webkit-mask:url('../images/icons/resources.svg') no-repeat 50% 50%;
+                mask: url('../images/icons/resources.svg')no-repeat 50% 50%;
+            }
+        }
+        &-events{
+            ::before{
+                -webkit-mask:url('../images/icons/events.svg') no-repeat 50% 50%;
+                mask: url('../images/icons/events.svg')no-repeat 50% 50%;
+            }
+        }
+        &-settings{
+            ::before{
+                -webkit-mask:url('../images/icons/settings.svg') no-repeat 50% 50%;
+                mask: url('../images/icons/settings.svg')no-repeat 50% 50%;
+            }
+        }
+    }
+}
+.vs-breadcrumb--ol{
+    font-family: "Khula";
+    font-size: 18px!important;
+}
+.vs-breadcrumb--link{
+    font-family: "Khula";
+    font-size: 18px!important;
+}
+.vs-select--input{
+    font-size: 14px;
+    font-family: "Khula"!important;
+}
+.vs-select--input:hover{
+    border: none!important;
+}
+.vs-select--options{
+    font-family: "Khula"!important;
+    font-size: 14px;
+}
+.v-date-picker-table{
+    height: unset!important;
+}
+.vs-button.round{
+    border-radius: 100px!important;
+}
+.vs-avatar--con-image{
+    height: 177px!important;
+    width: 177px!important;
+}
+.cv-header-day{
+    color: #444444!important;
+}
+//.vue-star-rating-star{
+//    height: 12px!important;
+//}
+.con-ul-tabs{
+    display: flex;
+    justify-content:flex-end;
+    .ul-tabs{
+        width: 22%!important;
+    }
+    .line-vs-tabs{
+        display: none!important;
+    }
+}
+.tab-text{
+    position:relative;
+}
+.course-graph-title{
+    position:absolute;
+    top: -30px;
+    left: 0;
+    font-family: "Khula-Bold"!important;
+    font-size: 12px!important;
+}
+.apexcharts-text{
+    font-family: "Khula-Bold"!important;
+    font-size: 18px!important;
+    color: #4F4F4F!important;
+}
+.con-slot-tabs{
+    overflow: visible!important;
+}
+.vx-card{
+    box-shadow: none!important;
+}
+.results-search{
+    .vs-inputx{
+        border: none!important;
+        font-size: 14px!important;
+        font-family: "Khula"!important;
+    }
+    .isFocus{
+        .vs-inputx{
+            border: none!important;
+        }
+    }
+}
+.vs-popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 631px;
+    height: 338px;
+    border-radius: 30px !important;
+}
+.apexcarts-datalabels-group{
+    position: relative!important;
+}
+.apexcarts-text{
+    position: absolute;
+    bottom: 30px!important;
+}
+.desc-bl{
+    .isFocus{
+        .vs-con-input{
+            .input-span-placeholder{
+                font-size: 14px!important;
+            }
+        }
+    }
+}
+.quiz-creation{
+    .vs-con-textarea{
+        textarea{
+            resize: none!important;
+        }
+    }
+}
+.v-calendar{
+    border-radius: 20px;
+    .v-btn--round{
+        background-color: transparent!important;
+    }
+}
+.v-calendar-daily_head-weekday{
+    font-family: "Futura";
+    font-size: 18px!important;
+    line-height: 23px;
+    text-transform: capitalize!important;
+}
+.store-block{
+    .vs-tabs--li{
+        color: white;
+    }
+    .vs-tabs-primary .con-ul-tabs .activeChild button, .vs-tabs-primary .con-ul-tabs button:not(:disabled):hover{
+        color: #FF808B!important;
+    }
+}
+.dashboard-top-block{
+    .vs-card--content{
+        height: 100%;
+    }
+}
+.crazy-quill{
+    background: #FFFFFF;
+    border: 1px solid #DFE3E9;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    padding: 15px;
+    height: 220px;
+    .ql-toolbar{
+        border-top: none!important;
+        border-left: none!important;
+        border-right: none!important;
+    }
+    .ql-container{
+        border-right: none!important;
+        border-left: none!important;
+        border-bottom: none!important;
+    }
+    &-feedback{
+        border-radius: 7px 7px 0 0;
+        box-shadow:none!important;
+    }
+}
+.quill-feedback{
+    border: 1px solid #DFE3E9;
+    border-radius: 0 0 7px 7px;
+    border-top: none;
+    padding: 15px;
+    display:flex;
+    justify-content:flex-end;
+}
+.v-calendar .v-event-timed-container{
+    margin-right: 0!important;
+}
+.theme--light.v-calendar-events .v-event-timed{
+    padding: 10px;
+}
+.v-calendar-daily__interval{
+    padding-top: 7px;
+}
+.theme--light.v-calendar-daily .v-calendar-daily__day-interval:nth-child(8){
+    border-top: none!important;
+}

@@ -1,0 +1,94 @@
+@import 'main';
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/MontserratAlternates-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url("../fonts/Montserrat-Bold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Montserrat-Extra-Bold";
+    src: url("../fonts/Montserrat-ExtraBold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Khula";
+    src: url("../fonts/FuturaPT-Book.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Khula-Bold";
+    src: url("../fonts/FuturaPT-Bold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Khula-SemiBold";
+    src: url("../fonts/FuturaPT-Bold.woff2") format("woff2");
+}
+@font-face{
+    font-family: "Bjorn";
+    src: url("../fonts/Bjorn-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url("../fonts/Roboto-Bold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Futura";
+    src: url("../fonts/FuturaPT-Book.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Futura-Demi";
+    src: url("../fonts/FuturaPT-Demi.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Futura-Heavy";
+    src: url("../fonts/FuturaPT-Heavy.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Medium.woff2") format("woff2");
+}
+body{
+    h1,h2{
+        font-family: 'Montserrat'!important;
+        color: #000000!important;
+    }
+    color: #000000!important;
+    button{
+        color:#ffffff;
+    }
+    height: unset!important;
+    min-height: 100%;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow:none;
+    border-radius: 4px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(120, 120, 120, 0.51);
+    border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(120, 120, 120, 0.51);
+}
+.bg-primary-lignt{
+    background-color: $primary-lignt!important;
+}
+.quill-editor{
+    overflow: hidden!important;
+}
+.white--text{
+    color:white;
+}
+.dz-progress{display:none;}
+
+
