@@ -10,7 +10,7 @@
         href="#"
         class="futura t-24 mr-3 no-wrap"
         @click.prevent="scrollToId('description')"
-        >Услуги</a
+        >{{ $t("services") }}</a
       >
     </vs-navbar-item>
     <vs-navbar-item index="1">
@@ -18,7 +18,7 @@
         href="#"
         class="futura t-24 mr-3 no-wrap"
         @click.prevent="scrollToId('description_3')"
-        >Особенности</a
+        >{{ $t("special_properties") }}</a
       >
     </vs-navbar-item>
     <vs-navbar-item index="2">
@@ -26,7 +26,7 @@
         href="#"
         class="futura t-24 mr-3 no-wrap"
         @click.prevent="scrollToId('courses_list')"
-        >Курсы</a
+        >{{ $t("courses") }}</a
       >
     </vs-navbar-item>
     <vs-navbar-item index="3">
@@ -34,20 +34,21 @@
         href="#"
         class="futura t-24 mr-3 no-wrap"
         @click.prevent="scrollToId('contact_us')"
-        >Контакты</a
+        >{{ $t("contacts") }}</a
       >
     </vs-navbar-item>
-    <select class="navbar-select mr-3">
-      <option>RU</option>
+    <select class="navbar-select mr-3" v-model="$i18n.locale">
+      <option value="ru">RU</option>
+      <option value="en">EN</option>
     </select>
     <router-link to="/login" type="button" class="blue-button text-white">
-      {{ $store.getters.isAuthenticated ? "Вход" : "Login" }}
+      {{ $t("login") }}
     </router-link>
   </vs-navbar>
 </template>
 <script>
 export default {
-  name: "NavbarComponent",
+  name: "navbar-component",
   data() {
     return {
       activeItem: "",

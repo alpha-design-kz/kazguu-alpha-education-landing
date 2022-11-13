@@ -833,7 +833,7 @@ module.exports = {
       visibility: ["responsive"],
       whitespace: ["responsive"],
       wordBreak: ["responsive"],
-      width: ["responsive"],
+      width: [],
       zIndex: ["responsive"],
     },
   },

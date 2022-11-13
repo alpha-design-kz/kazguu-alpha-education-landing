@@ -42,8 +42,6 @@ export default {
       this.vueAppClasses.push(classesStr);
     },
     handleWindowResize() {
-      this.$store.commit("UPDATE_WINDOW_WIDTH", window.innerWidth);
-
       // Set --vh property
       document.documentElement.style.setProperty(
         "--vh",
@@ -64,7 +62,6 @@ export default {
   },
   mounted() {
     this.toggleClassInBody(themeConfig.theme);
-    this.$store.commit("UPDATE_WINDOW_WIDTH", window.innerWidth);
     let vh = window.innerHeight * 0.01;
     // Then we set the value in the --vh custom property to the root of the document
     document.documentElement.style.setProperty("--vh", `${vh}px`);

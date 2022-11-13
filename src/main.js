@@ -6,10 +6,10 @@ import "vuesax/dist/vuesax.css";
 
 Vue.use(Vuesax);
 
-import vuetify from "@/plugins/vuetify";
-import "@/assets/sass/main.scss";
 import "@/assets/sass/app.scss";
 import "@/assets/sass/tailwind.scss";
+import vuetify from "@/plugins/vuetify";
+import "@/assets/sass/main.scss";
 
 import router from "./router";
 
@@ -26,10 +26,23 @@ Vue.component("slide", Slide);
 import "prismjs";
 import "prismjs/themes/prism-tomorrow.css";
 
+import VueI18n from "vue-i18n";
+Vue.use(VueI18n);
+
+import { defaultLocale, languages } from "@/plugins/i18n";
+const messages = Object.assign(languages);
+
 Vue.config.productionTip = false;
+
+const i18n = new VueI18n({
+  locale: defaultLocale,
+  fallbackLocale: "en",
+  messages,
+});
 
 new Vue({
   router,
   vuetify,
+  i18n,
   render: (h) => h(App),
 }).$mount("#app");

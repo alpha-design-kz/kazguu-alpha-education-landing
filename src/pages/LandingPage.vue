@@ -17,19 +17,17 @@
       <div class="w-100 flex justify-between items-center res-col">
         <div class="w-80 landing-text-res" style="z-index: 2">
           <p class="montserrat-bold t-48">
-            ОБРАЗОВАТЕЛЬНАЯ ПЛАТФОРМА НОВОГО ПОКОЛЕНИЯ
+            {{ $t("educational_platform_new_generation") }}
           </p>
           <p class="futura t-28 my-10 w-70">
-            Мы соединили игровой подход, удобный доступ к материалу и огромное
-            разнообразие вопросов в уникальной системе, чтобы сделать ваш
-            образовательный процесс более эффективным и увлекательным
+            {{ $t("educational_platform_new_generation_description") }}
           </p>
           <span class="pt-2">
             <button
               class="blue-button blue-button-large khula-bold no-wrap t-24 mb-2 w-45"
               @click.prevent="scrollToId('contact_us')"
             >
-              Получить демо
+              {{ $t("get_demo") }}
             </button>
           </span>
         </div>
@@ -117,29 +115,22 @@
         </slide>
       </carousel>
       <div
-        class="w-40 flex-col justify-between py-5 animation-text-block animation-text-block-right"
-        style="display: flex; z-index: 2"
+        class="flex-col justify-between py-5 animation-text-block animation-text-block-right"
+        style="display: flex; z-index: 2; width: 40%"
       >
         <span>
           <p class="futura-heavy t-36 mb-5" style="color: #000261">
-            Модульное решение для образовательных организаций
+            {{ $t("module_solution_for_educational_organizations") }}
           </p>
           <p class="futura t-22">
-            Вы устали от рассылки одного и того же учебного материала своим
-            ученикам снова и снова? Ваши ученики выглядят демотивированными
-            после нескольких недель занятий? Мы прекрасно знаем эту боль,
-            поэтому мы разработали образовательную платформу нового поколения,
-            которая позволяет эффективно организовать учебный материал и
-            мотивировать ваших учеников при помощи специально разработанной
-            системе вознаграждений. Как бонус, мы включили поддержку создания
-            более 10 типов разнообразных вопросов
+            {{ $t("module_solution_for_educational_organizations_text") }}
           </p>
         </span>
         <button
           class="blue-button blue-button-large khula-bold no-wrap t-24 mb-5"
           @click.prevent="scrollToId('contact_us')"
         >
-          Оставить заявку
+          {{ $t("leave_request") }}
         </button>
       </div>
     </div>
@@ -157,23 +148,15 @@
         class="animation-figure animation-figure-2"
       />
       <div
-        class="w-40 flex-col justify-between py-5 animation-text-block animation-text-block-left"
-        style="display: flex; z-index: 2"
+        class="flex-col justify-between py-5 animation-text-block animation-text-block-left"
+        style="display: flex; z-index: 2; width: 40%"
       >
         <span>
           <p class="futura-heavy t-36 mb-5" style="color: #000261">
-            Открытый портал для обучающих и обучающихся
+            {{ $t("open_portal") }}
           </p>
           <p class="futura t-22">
-            Сколько раз вы забывали где находится учебный материал или теряли
-            мотивацию после нескольких недель онлайн-обучения? Сон во время
-            видео-лекции и полное разочарование от большого количества открытого
-            программного обеспечения - насущные для вас проблемы? Мы прекрасно
-            знаем эту боль, поэтому мы разработали образовательную платформу
-            нового поколения, которая предоставляет быстрый доступ ко всему
-            материалу для эффективного обучения, а специально созданная игровая
-            среда поможет вам не терять мотивацию и успешно усваивать новые
-            знания
+            {{ $t("open_portal_text") }}
           </p>
         </span>
         <span class="mb-5">
@@ -181,7 +164,7 @@
             class="blue-button blue-button-large khula-bold t-24 no-wrap mb-3"
             @click.prevent="scrollToId('contact_us')"
           >
-            Оставить заявку
+            {{ $t("leave_request") }}
           </button>
         </span>
       </div>
@@ -232,11 +215,10 @@
           class="landing-card-image mb-3"
         />
         <p class="montserrat-bold w-90 t-24 mb-3">
-          Удобное хранение и просмотр ресурсов
+          {{ $t("convenient_storage") }}
         </p>
         <p class="khula t-22 w-100">
-          Система позволяет просмотр видео-лекций, PDF-презентаций, ссылки и
-          прослушивание аудио файлов.
+          {{ $t("convenient_storage_text") }}
         </p>
       </div>
       <div
@@ -249,10 +231,9 @@
           service="game"
           class="landing-card-image mb-3"
         />
-        <p class="montserrat-bold w-80 t-24 mb-3">Геймификация</p>
+        <p class="montserrat-bold w-80 t-24 mb-3">{{ $t("gamification") }}</p>
         <p class="khula t-22 w-100">
-          В системе предусмотрены внутренняя валюта и очки опыта, которые
-          присуждаются после выполнения определенных задач и достижений.
+          {{ $t("gamification_text") }}
         </p>
       </div>
       <div
@@ -266,11 +247,10 @@
           class="landing-card-image mb-3"
         />
         <p class="montserrat-bold w-90 t-24 mb-3">
-          Большое разнообразие вопросов
+          {{ $t("large_question_pool") }}
         </p>
         <p class="khula t-22 w-100">
-          Система поддерживает создание более 10 разных видов вопросов для более
-          лучшего освоения и закперления материала
+          {{ $t("large_question_pool_text") }}
         </p>
       </div>
       <div
@@ -284,11 +264,10 @@
           class="landing-card-image mb-3"
         />
         <p class="montserrat-bold w-90 t-24 mb-3">
-          Расписание для лекций и вебинаров
+          {{ $t("lecture_schedule") }}
         </p>
         <p class="khula t-22 w-100">
-          Обучающиеся также могут просматривать расписание на записанные курсы и
-          отслеживать все дедлайны в удобном дэшборде.
+          {{ $t("lecture_schedule_text") }}
         </p>
       </div>
       <div
@@ -302,11 +281,10 @@
           class="landing-card-image mb-3"
         />
         <p class="montserrat-bold w-90 t-24 mb-3">
-          Статистика и анализ результатов
+          {{ $t("statistics_analysis") }}
         </p>
         <p class="khula t-22 w-100">
-          Статистика по всем текущим курсам доступна в дэшборде обучаемого.
-          Можно просматривать все оценки за задания, дедлайны и позицию и т.д.
+          {{ $t("statistics_analysis_text") }}
         </p>
       </div>
       <div
@@ -320,11 +298,10 @@
           class="landing-card-image mb-3"
         />
         <p class="montserrat-bold w-90 t-24 mb-3">
-          Интуитивный и удобный интерфейс
+          {{ $t("intuitive_interface") }}
         </p>
         <p class="khula t-22 w-100">
-          Все формы, поля, таблицы, секции и элементы проработаны по всем
-          стандартам UI/UX дизайна, что позволяет быстро освоиться
+          {{ $t("intuitive_interface_text") }}
         </p>
       </div>
     </div>
@@ -349,12 +326,14 @@
         class="flex justify-between items-center w-100 mt-5"
         style="z-index: 2"
       >
-        <p class="khula-bold t-24 mb-0 mt-4">New courses</p>
+        <p class="khula-bold t-24 mb-0 mt-4">
+          {{ $t("new_courses") }}
+        </p>
         <button
           @click="confirmation = true"
           class="blue-button blue-button-large khula-bold t-24"
         >
-          See all
+          {{ $t("see_all") }}
         </button>
       </span>
       <div
@@ -393,12 +372,14 @@
         class="flex justify-between w-100 mt-5 items-center"
         style="z-index: 2"
       >
-        <p class="khula-bold t-24 mb-0 mr-2 mt-4">Popular courses</p>
+        <p class="khula-bold t-24 mb-0 mr-2 mt-4">
+          {{ $t("popular_courses") }}
+        </p>
         <button
           @click="confirmation = true"
           class="blue-button blue-button-large khula-bold t-24 no-wrap"
         >
-          See all
+          {{ $t("see_all") }}
         </button>
       </span>
       <div
@@ -444,11 +425,10 @@
           />
           <img src="@/assets/images/common/landing-popup-1.svg" class="mb-5" />
           <p class="montserrat-extra t-48 c-violet mb-5">
-            Курсы будут доступны очень скоро
+            {{ $t("courses_will_be_available") }}
           </p>
           <p class="futura t-28 mb-5" style="color: #7b7b7b">
-            Оставьте свою электронный адрес чтобы быть первым, кто узнает о
-            появлении новых курсов
+            {{ $t("leave_your_email") }}
           </p>
           <button
             class="blue-button blue-button-large khula-bold no-wrap t-24 mb-2"
@@ -457,7 +437,7 @@
               $refs.navbar.scrollToId('contact_us');
             "
           >
-            Оставить заявку
+            {{ $t("leave_request") }}
           </button>
         </div>
       </vs-popup>
@@ -481,31 +461,9 @@
               src="@/assets/images/photo/photo1.svg"
             />
             <span class="flex flex-col justify-center">
-              <p class="futura-heavy t-24">Мауит Ожет</p>
-              <p class="futura t-24 c-violet my-1">Со-основатель Zerdeli</p>
-              <custom-star-rating
-                :show-rating="false"
-                :star-size="18"
-                readOnly
-                :rating="5"
-              />
-            </span>
-          </span>
-          <p class="futura t-22" style="color: #6d839d">
-            Очень удобная система для проведения онлайн занятий. Система
-            нравится всем учителям и ученикам и все с удовольствием занимаются
-          </p>
-        </slide>
-        <slide class="stories">
-          <span class="flex">
-            <img
-              class="stories-avatar mr-2 pb-3"
-              src="@/assets/images/photo/photo2.svg"
-            />
-            <span class="flex flex-col justify-center">
-              <p class="futura-heavy t-24">Асхат Молкенов</p>
+              <p class="futura-heavy t-24">{{ $t("zerdeli_founder_name") }}</p>
               <p class="futura t-24 c-violet my-1">
-                Координатор “IT в бизнесе” в КазГЮУ
+                {{ $t("zerdeli_founder") }}
               </p>
               <custom-star-rating
                 :show-rating="false"
@@ -516,8 +474,32 @@
             </span>
           </span>
           <p class="futura t-22" style="color: #6d839d">
-            Система позволяет студентам обучаться в более интересном формате.
-            Геймификация служит дополнительной мотивацией для выпонения заданий
+            {{ $t("system_text") }}
+          </p>
+        </slide>
+        <slide class="stories">
+          <span class="flex">
+            <img
+              class="stories-avatar mr-2 pb-3"
+              src="@/assets/images/photo/photo2.svg"
+            />
+            <span class="flex flex-col justify-center">
+              <p class="futura-heavy t-24">
+                {{ $t("coordinator_kazguu_name") }}
+              </p>
+              <p class="futura t-24 c-violet my-1">
+                {{ $t("coordinator_kazguu") }}
+              </p>
+              <custom-star-rating
+                :show-rating="false"
+                :star-size="18"
+                readOnly
+                :rating="5"
+              />
+            </span>
+          </span>
+          <p class="futura t-22" style="color: #6d839d">
+            {{ $t("system_interesting_format") }}
           </p>
         </slide>
         <slide class="stories">
@@ -527,8 +509,10 @@
               src="@/assets/images/photo/photo3.svg"
             />
             <span class="flex flex-col justify-center">
-              <p class="futura-heavy t-24">Дворец Школьников</p>
-              <p class="futura t-24 c-violet my-1">имени М.Утемисулы</p>
+              <p class="futura-heavy t-24">{{ $t("student_palace") }}</p>
+              <p class="futura t-24 c-violet my-1">
+                {{ $t("student_palace_name") }}
+              </p>
               <custom-star-rating
                 :show-rating="false"
                 :star-size="18"
@@ -538,8 +522,7 @@
             </span>
           </span>
           <p class="futura t-22" style="color: #6d839d">
-            Отличный инструмент для онлайн занятий. Особенно очень удобная
-            система хранения и просмотр ресурсов
+            {{ $t("best_tool") }}
           </p>
         </slide>
         <slide class="stories">
@@ -549,8 +532,12 @@
               src="@/assets/images/photo/photo4.png"
             />
             <span class="flex flex-col justify-center">
-              <p class="futura-heavy t-24">Ердаулет Абсаттар</p>
-              <p class="futura t-24 c-violet my-1">Директор Alpha Design</p>
+              <p class="futura-heavy t-24">
+                {{ $t("director_alpha_design_name") }}
+              </p>
+              <p class="futura t-24 c-violet my-1">
+                {{ $t("director_alpha_design") }}
+              </p>
               <custom-star-rating
                 :show-rating="false"
                 :star-size="18"
@@ -560,8 +547,7 @@
             </span>
           </span>
           <p class="futura t-22" style="color: #6d839d">
-            Я пользуюсь этой платформой для организации ресурсов, полезных
-            материалов. Очень удобная платформа для освоения и использования
+            {{ $t("review_1_text") }}
           </p>
         </slide>
         <!--                Один должен быть пустой-->
@@ -590,15 +576,15 @@
         class="animation-figure animation-figure-4"
       />
       <p class="futura-heavy t-56 text-center" style="z-index: 2">
-        Напишите нам
+        {{ $t("contact_us") }}
       </p>
       <div class="email-card w-70 my-10" style="z-index: 2">
-        <p class="futura-heavy t-20 mb-2">Your name</p>
+        <p class="futura-heavy t-20 mb-2">{{ $t("your_name") }}</p>
         <vs-input
           class="input-custom input-custom-name w-100 mb-4"
           v-model="form.name"
         />
-        <p class="futura-heavy t-20 mb-2">Phone number</p>
+        <p class="futura-heavy t-20 mb-2">{{ $t("phone_number") }}</p>
         <vs-input
           class="input-custom input-custom-phone w-100 mb-4"
           v-model="form.phone"
@@ -608,13 +594,15 @@
           class="input-custom input-custom-mail w-100 mb-4"
           v-model="form.email"
         />
-        <p class="futura-heavy t-20 mb-2">Comments</p>
+        <p class="futura-heavy t-20 mb-2">{{ $t("comments") }}</p>
         <textarea
           class="course-textarea course-textarea-small w-100 mb-4"
           v-model="form.comment"
         />
-        <vs-button class="round-button w-100 khula-bold t-24" @click="sendMail"
-          >Send</vs-button
+        <vs-button
+          class="round-button w-100 khula-bold t-24"
+          @click="sendMail"
+          >{{ $t("send") }}</vs-button
         >
       </div>
       <vs-popup :active.sync="confirmation1" class="landing-popup">
@@ -629,11 +617,10 @@
           />
           <img src="@/assets/images/common/landing-popup-2.svg" class="mb-5" />
           <p class="montserrat-extra t-48 c-violet mb-5">
-            Ваша заявка успешно отправлена
+            {{ $t("your_request_was_sent") }}
           </p>
           <p class="futura t-28 mb-5" style="color: #7b7b7b">
-            Наши менеджеры ответят вам очень скоро. Также вы можете связаться по
-            номеру
+            {{ $t("our_managers_will_answer") }}
             <span class="c-violet">+77013983687</span>
           </p>
         </div>
@@ -643,15 +630,14 @@
   </div>
 </template>
 <script>
-import Navbar from "../components/Navbar.vue";
-import Footer from "../components/Footer";
+import Navbar from "@/components/Navbar.vue";
+import Footer from "@/components/Footer";
 import Service from "@/assets/images/pages/landing/services";
-import NewCoursesLanding from "../components/NewCoursesLanding";
-import LandingCourseCard from "../components/LandingCourseCard";
+import NewCoursesLanding from "@/components/NewCoursesLanding";
+import LandingCourseCard from "@/components/LandingCourseCard";
 import anime from "animejs/lib/anime.es.js";
 import { Carousel, Slide } from "vue-carousel";
 import axios from "axios";
-
 export default {
   components: {
     Navbar,
@@ -687,8 +673,15 @@ export default {
     };
   },
   methods: {
-    getCourses(type) {
-      console.log(type);
+    getCourses() {
+      axios({ url: "/api/courses", method: "GET" })
+        .then((res) => {
+          this.new_courses = res.data;
+          this.popular_courses = res.data;
+        })
+        .catch((err) => {
+          console.log("error in GET_COURSES", err);
+        });
     },
     scrollToId(id) {
       let el = document.getElementById(id);
@@ -717,9 +710,7 @@ export default {
         .then(function () {
           _this.confirmation1 = true;
         })
-        .catch(function (err) {
-          console.log(err);
-        });
+        .catch(function () {});
     },
     myEventHandler() {
       if (window.innerWidth >= 1100) {
