@@ -15,7 +15,7 @@ RUN yarn build
 
 # production stage
 FROM --platform=linux/amd64 nginx:stable-alpine as production-stage
-COPY --from=build-stage /app/dist/public /usr/share/nginx/html
+COPY --from=build-stage /app/dist /usr/share/nginx/html
 # COPY .docker-config/nginx/default.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
