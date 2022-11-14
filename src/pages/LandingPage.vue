@@ -674,9 +674,16 @@ export default {
   },
   methods: {
     getCourses() {
-      axios({ url: "/api/courses", method: "GET" })
+      axios({ url: "/api/courses?type=new&amount=4", method: "GET" })
         .then((res) => {
           this.new_courses = res.data;
+        })
+        .catch((err) => {
+          console.log("error in GET_COURSES", err);
+        });
+
+      axios({ url: "/api/courses?type=popular&amount=4", method: "GET" })
+        .then((res) => {
           this.popular_courses = res.data;
         })
         .catch((err) => {
