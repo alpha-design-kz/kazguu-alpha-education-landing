@@ -41,9 +41,9 @@
       <option value="ru">RU</option>
       <option value="en">EN</option>
     </select>
-    <router-link to="/login" type="button" class="blue-button text-white">
+    <a href="https://alphaedu.tech/login" class="blue-button text-white">
       {{ $t("login") }}
-    </router-link>
+    </a>
   </vs-navbar>
 </template>
 <script>
