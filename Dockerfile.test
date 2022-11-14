@@ -3,9 +3,9 @@
 # build stage
 FROM --platform=linux/amd64 node:14-alpine as build-stage
 WORKDIR /app
-COPY package*.json yarn*.lock ./
-RUN yarn install
-COPY . .
-RUN yarn build
+# COPY package*.json yarn*.lock ./
+# RUN yarn install
+# COPY . .
+# RUN yarn build
 
 CMD ["tail", "-f", "/dev/null"]

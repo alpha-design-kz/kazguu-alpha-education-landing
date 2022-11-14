@@ -3,10 +3,12 @@ services:
   frontend:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.test
     env_file:
       - .env
     ports:
       - "8571:80"
       - "3071:80"
+    volumes:
+      - .:/app
 

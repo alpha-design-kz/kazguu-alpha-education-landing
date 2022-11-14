@@ -1,0 +1,32 @@
+# sudo rm -f /etc/nginx/sites-enabled/default
+# sudo rm -f /etc/nginx/sites-available/www.landing.alphaedu.tech /etc/nginx/sites-enabled/www.landing.alphaedu.tech
+# sudo cp -f .docker-config/nginx/www.landing.alphaedu.tech /etc/nginx/sites-available/www.landing.alphaedu.tech
+# sudo ln -s /etc/nginx/sites-available/www.landing.alphaedu.tech /etc/nginx/sites-enabled/www.landing.alphaedu.tech
+# ls /etc/nginx/sites*/
+# sudo certbot --nginx -d kae.asmo.su -d www.kae.asmo.su
+# sudo nginx -t && sudo nginx -s reload
+
+upstream www-landing-alphaedu-tech {
+    server localhost:8571 max_fails=5 fail_timeout=60s;
+}
+server {
+    listen 80;
+    listen [::]:80;
+    server_name kae.asmo.su;
+    
+    gzip on;
+    gzip_disable "msie6";
+    gzip_min_length 1000;
+
+    # security
+    add_header Referrer-Policy "strict-origin";
+    add_header X-Content-Type-Options nosniff;
+    add_header X-Frame-Options "SAMEORIGIN";
+    add_header X-XSS-Protection "1; mode=block";
+    add_header Strict-Transport-Security 'max-age=31536000; includeSubDomains; preload';
+
+    location / {
+        proxy_pass http://www-landing-alphaedu-tech/;
+        try_files $uri $uri/ /index.html =404;
+    }
+}
