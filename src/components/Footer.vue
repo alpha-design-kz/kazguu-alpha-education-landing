@@ -14,12 +14,30 @@
         style="display: flex"
       >
         <p class="t-22 futura-demi mb-0 c-white mb-5">{{ $t("links") }}</p>
-        <a class="t-22 futura c-white cursor mb-5">{{ $t("services") }}</a>
-        <a class="t-22 futura c-white cursor mb-5">{{
-          $t("special_properties")
-        }}</a>
-        <a class="t-22 futura c-white cursor mb-5">{{ $t("courses") }}</a>
-        <a class="t-22 futura c-white cursor">{{ $t("contacts") }}</a>
+        <a
+          class="t-22 futura c-white cursor mb-5"
+          href="#"
+          @click.prevent="scrollToId('description')"
+          >{{ $t("services") }}</a
+        >
+        <a
+          class="t-22 futura c-white cursor mb-5"
+          href="#"
+          @click.prevent="scrollToId('description_3')"
+          >{{ $t("special_properties") }}</a
+        >
+        <a
+          class="t-22 futura c-white cursor mb-5"
+          href="#"
+          @click.prevent="scrollToId('courses_list')"
+          >{{ $t("courses") }}</a
+        >
+        <a
+          class="t-22 futura c-white cursor"
+          href="#"
+          @click.prevent="scrollToId('contact_us')"
+          >{{ $t("contacts") }}</a
+        >
       </span>
       <span
         class="w-40 pl-10 footer-contacts-res justify-between flex-col mr-4"
@@ -59,6 +77,10 @@ export default {
     scrollToTop() {
       let hero = document.getElementById("hero");
       hero.scrollIntoView({ behavior: "smooth" });
+    },
+    scrollToId(id) {
+      let el = document.getElementById(id);
+      el.scrollIntoView({ behavior: "smooth", inline: "start" });
     },
   },
 };
