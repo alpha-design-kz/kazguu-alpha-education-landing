@@ -674,21 +674,59 @@ export default {
   },
   methods: {
     getCourses() {
-      axios({ url: "/api/courses?type=new&amount=4", method: "GET" })
-        .then((res) => {
-          this.new_courses = res.data;
-        })
-        .catch((err) => {
-          console.log("error in GET_COURSES", err);
-        });
+      this.new_courses = [
+        {
+          id: 1,
+          color: "red",
+          icon_url: "",
+          title: "Business Law",
+          instructor_name: "Saul Goodman",
+          rating: 5,
+        },
+        {
+          id: 2,
+          color: "blue",
+          icon_url: "",
+          title: "General Chemistry I",
+          instructor_name: "Walter White",
+          rating: 5,
+        },
+        {
+          id: 3,
+          color: "green",
+          icon_url: "",
+          title: "Ethics",
+          instructor_name: "Jesse Pinkman",
+          rating: 5,
+        },
+      ];
 
-      axios({ url: "/api/courses?type=popular&amount=4", method: "GET" })
-        .then((res) => {
-          this.popular_courses = res.data;
-        })
-        .catch((err) => {
-          console.log("error in GET_COURSES", err);
-        });
+      this.popular_courses = [
+        {
+          id: 1,
+          color: "grey",
+          icon_url: "",
+          title: "Microeconomics",
+          instructor_name: "Skyler White",
+          rating: 5,
+        },
+        {
+          id: 2,
+          color: "yellow",
+          icon_url: "",
+          title: "Introduction to Business",
+          instructor_name: "Michael Scott",
+          rating: 5,
+        },
+        {
+          id: 3,
+          color: "orange",
+          icon_url: "",
+          title: "Information Security",
+          instructor_name: "Mike Ehrmantraut",
+          rating: 5,
+        },
+      ];
     },
     scrollToId(id) {
       let el = document.getElementById(id);
