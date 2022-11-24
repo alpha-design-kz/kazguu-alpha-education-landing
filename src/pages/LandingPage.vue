@@ -746,7 +746,7 @@ export default {
       e.preventDefault();
       let _this = this;
       axios
-        .post("/api/landing-mail", {
+        .post("https://alphaedu.tech/api/landing-mail", {
           name: this.form.name,
           phone: this.form.phone,
           email: this.form.email,
